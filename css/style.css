@@ -41,6 +41,18 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   font-family: 'Source Sans Pro', sans-serif; }
+  
+  .link-box{
+    display: flex;
+    gap: 20px;
+  }
+
+  .stats{
+    text-align: center;
+  }
+  .stat-box{
+    margin: 30px 0;
+  }
 
 a {
   text-decoration: none;
@@ -291,15 +303,20 @@ textarea {
   .projects__row:last-child {
     margin-bottom: 0; }
   .projects__row-img-cont {
-    overflow: hidden; }
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+   }
   .projects__row-img {
     width: 100%;
     display: block;
-    object-fit: cover; }
+    object-fit: cover;
+    border-radius: 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  }
   .projects__row-content {
-    padding: 2rem 0;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
     align-items: flex-start; }
     @media only screen and (max-width: 56.25em) {
@@ -308,7 +325,8 @@ textarea {
     .projects__row-content-title {
       font-weight: 700;
       font-size: 2.8rem;
-      margin-bottom: 2rem; }
+     /* margin-bottom: 2rem;   */
+    }
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-title {
           font-size: 2.4rem; } }
@@ -317,7 +335,8 @@ textarea {
       color: grey;
       max-width: 60rem;
       line-height: 1.7;
-      margin-bottom: 3rem; }
+      /* margin-bottom: 1rem;  */
+    }
       @media only screen and (max-width: 37.5em) {
         .projects__row-content-desc {
           font-size: 1.7rem; } }
@@ -437,7 +456,8 @@ textarea {
   .project-details__content-title {
     font-weight: 700;
     font-size: 2.8rem;
-    margin-bottom: 3rem; }
+    margin-bottom: 1rem; 
+  }
     @media only screen and (max-width: 37.5em) {
       .project-details__content-title {
         font-size: 2.4rem; } }
@@ -463,7 +483,7 @@ textarea {
     margin-bottom: 2rem; }
 
 .project-details__tools-used {
-  margin: 0 0 7rem 0; }
+  margin: 0 0 1rem 0; }
   .project-details__tools-used-list {
     display: flex;
     flex-wrap: wrap; }
@@ -519,7 +539,7 @@ textarea {
   .header__logo-img-cont {
     width: 5rem;
     height: 5rem;
-    border-radius: 50px;
+    border-radius: 50%;
     overflow: hidden;
     margin-right: 1.5rem;
     background: #0062b9; }
