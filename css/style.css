@@ -45,6 +45,7 @@ body {
   .link-box{
     display: flex;
     gap: 20px;
+    margin-top: 10px;
   }
 
   .stats{
@@ -688,17 +689,22 @@ textarea {
 
 .skills {
   display: flex;
-  flex-wrap: wrap; }
-  .skills__skill {
-    padding: 1rem 2rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
-    font-size: 1.6rem;
-    background: rgba(153, 153, 153, 0.2);
-    border-radius: 5px;
-    font-weight: 600;
-    color: #777; }
-
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+.skills_Child{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 15px;
+  color: rgb(90, 87, 87);
+  font-weight: bold;
+  align-items: center;
+}
+.tools_img{
+  width: 50px;
+  height: 50px;
+}
 .mouse {
   width: 25px;
   height: 40px;
