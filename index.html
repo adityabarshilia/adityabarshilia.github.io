@@ -15,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body>
@@ -318,7 +319,7 @@
         </span>
       </h2>
       <div class="contact__form-container">
-        <form action="#" class="contact__form">
+        <form action="#" class="contact__form" id="contactForm">
           <div class="contact__form-field">
             <label class="contact__form-label" for="name">Name</label>
             <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
@@ -402,6 +403,28 @@
       window.open("https://drive.google.com/file/d/17C16fMQDDpB6_cXwLviXxDl6DgQV4wnB/view?usp=share_link", '_blank');
     })
     GitHubCalendar(".calendar", "adityabarshilia", { responsive: true });
+  </script>
+  <script type="text/javascript">
+    
+    document.getElementById("contactForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      sendEmail();
+    })
+
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "Enter your password",
+        To: 'barshiliaaditya7@gmail.com',
+        From: document.getElementById("email").value,
+        Subject: "Regarding job",
+        Body: document.getElementById("message").value,
+      })
+        .then(function (message) {
+          alert("Mail sent successfully")
+        });
+    }
   </script>
 </body>
 
