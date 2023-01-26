@@ -319,7 +319,7 @@
         </span>
       </h2>
       <div class="contact__form-container">
-        <form action="#" class="contact__form" id="contactForm">
+        <form method="post" class="contact__form" id="contactForm">
           <div class="contact__form-field">
             <label class="contact__form-label" for="name">Name</label>
             <input required placeholder="Enter Your Name" type="text" class="contact__form-input" name="name"
@@ -414,7 +414,7 @@
     function sendEmail() {
       Email.send({
         Host: "smtp.gmail.com",
-        Username: "sender@email_address.com",
+        Username: "barshiliaaditya7@gmail.com",
         Password: "Enter your password",
         To: 'barshiliaaditya7@gmail.com',
         From: document.getElementById("email").value,
