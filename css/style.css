@@ -59,14 +59,18 @@ a {
   text-decoration: none;
   color: inherit; }
 
-li {
-  list-style: none; }
+  .header__links li {
+  list-style: none; } */
 
 input:focus,
 button:focus,
 a:focus,
 textarea:focus {
   outline: none; }
+
+  #experience{
+    margin-top: 50px;
+  }
 
 button {
   border: none;
@@ -95,6 +99,20 @@ textarea {
   @media only screen and (max-width: 56.25em) {
     .heading-sec__mb-med {
       margin-bottom: 8rem; } }
+
+      #expcon{
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+      }
+
+      #expdesig{
+        font-size: 20px;
+        width: 30%;
+      }
+
+    
 
 .heading-sec__main {
   display: block;
